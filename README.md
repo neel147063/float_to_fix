@@ -56,8 +56,10 @@ This conversion transforms a fixed-point integer and fraction into a floating-po
   
 ##### Example
 ```sh
-Input  packet: 88 41 e0 53 c8 00
-Output packet: 88 00 1C 0a 79 00
+Input  packet: 88 41 e5 3c 80 00
+Output packet: 88 00 1C a7 90 00
+
+DECIMAL: 28.6528
 ```
 
 #### **Size 2**
@@ -85,9 +87,11 @@ Output packet: 88 00 1C 0a 79 00
 ##### Example
 ```sh
 Input  packet1: 91 00 00 00 1c 00
-Input  packet2: 92 00 00 0a 79 00
-Output packet1: 91 40 3c 00 00 0a
-Output packet2: 92 79 00 00 00 00
+Input  packet2: 92 a7 90 00 00 00
+Output packet1: 91 40 3c a7 90 00 
+Output packet2: 92 00 00 00 00 00
+
+DECIMAL: 28.6528
 ```
 
 #### **Size 3**
@@ -115,9 +119,11 @@ Output packet2: 92 79 00 00 00 00
 ##### Example
 ```sh
 Input  packet1: 99 00 00 00 00 1C
-Input  packet2: 9a 00 00 00 0a 79
-Output packet1: 99 40 03 c0 00 00
-Output packet2: 9a 00 a7 90 00 00
+Input  packet2: 9a a7 90 00 00 00
+Output packet1: 99 40 03 ca 79 00
+Output packet2: 9a 00 00 00 00 00
+
+DECIMAL: 28.6528
 ```
 
 ---
@@ -148,8 +154,10 @@ This conversion transforms a floating-point number into its fixed-point integer 
 
 ##### Example
 ```sh
-Input  packet: 48 41 e0 53 c8 00
-Output packet: 48 00 1c 0a 79 00
+Input  packet: 48 41 e5 3c 80 00
+Output packet: 48 00 1c a7 90 00
+
+DECIMAL: 28.6528
 ```
 
 #### **Size 2**
@@ -176,10 +184,12 @@ Output packet: 48 00 1c 0a 79 00
 
 ##### Example
 ```sh
-Input  packet1: 51 40 3c 00 00 0a
-Input  packet2: 52 79 00 00 00 00
+Input  packet1: 51 40 3c a7 90 00
+Input  packet2: 52 00 00 00 00 00
 Output packet1: 51 00 00 00 1c 00
-Output packet2: 52 00 00 0a 79 00
+Output packet2: 52 a7 90 00 00 00 
+
+DECIMAL: 28.6528
 ```
 
 #### **Size 3**
@@ -206,10 +216,12 @@ Output packet2: 52 00 00 0a 79 00
 
 ##### Example
 ```sh
-Input  packet1: 59 40 03 c0 00 00
-Input  packet2: 5a 00 a7 90 00 00
+Input  packet1: 59 40 03 ca 79 00
+Input  packet2: 5a 00 00 00 00 00
 Output packet1: 59 00 00 00 00 1C
-Output packet2: 5a 00 00 00 0a 79
+Output packet2: 5a a7 90 00 00 00 
+
+DECIMAL: 28.6528
 ```
 
 
